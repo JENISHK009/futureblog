@@ -1,0 +1,64 @@
+🔮 Blogs Listing Page – “Explore Universe of Ideas” (2050 Web UI Prompt)
+Design the Blogs Page as a dynamic, futuristic directory where users can search, filter, and explore all your blogs with animation-rich interactions and a sleek aesthetic. The layout must be grid-based, ultra-responsive, and minimal yet powerful in feel. Prioritize interactivity, depth, and intelligent user experience.
+
+✨ Core Features
+🔍 Animated Search Bar with Intelligence
+Centered or top-aligned in sticky position.
+
+Glassmorphic design with transparent background and blurred effect.
+
+On focus: Search input expands with blue ripple glow and a light hum animation.
+
+Placeholder text: “Search topics, ideas, creators...”
+
+Submit button: Black circular with a floating blue aura, animates to a search spinner briefly.
+
+🧰 Filters Sidebar (or sticky horizontal mobile version)
+Filters include:
+
+Categories (checkboxes or pills)
+
+Author (dropdown or tag search)
+
+Date (last week/month/year)
+
+Popularity or Most Commented
+
+Each filter should animate on toggle using Framer Motion — slide-in + fade effects.
+
+Selection indicator: Animated blue glow outline with checkmark.
+
+🧱 Blog Cards Grid
+2–4 columns responsive grid.
+
+Each card should:
+
+Animate in on scroll with slight elevation and fade.
+
+On hover: Slight tilt, glow shadow, and expand image preview.
+
+Include blog category badge, author chip, read time, and title.
+
+Blog cover image has zoom-in-on-hover with a subtle floating effect.
+
+“Read More” buttons with futuristic pill shape and animated blue wave on hover.
+
+🌗 Theme Adaptability
+Cards and layout should gracefully shift between dark and light modes.
+
+Blue accent remains primary in both — used in filters, buttons, highlights, and hover states.
+
+Backgrounds:
+
+Light theme: #f9f9f9 to #ffffff
+
+Dark theme: #0a0a0a to #1e1e1e
+
+All color transitions should be animated for smooth visual comfort.
+
+📱 Responsiveness
+Mobile: Filters turn into dropdowns or bottom-sheet style.
+
+Blog cards convert to vertical layout with swipe animations.
+
+Use clamp() CSS for adaptive font sizing.

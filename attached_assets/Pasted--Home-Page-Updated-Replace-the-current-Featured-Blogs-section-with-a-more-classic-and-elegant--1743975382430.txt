@@ -1,0 +1,89 @@
+🏠 Home Page (Updated)
+Replace the current "Featured Blogs" section with a more classic and elegant design, using a grid layout with clean blog cards that include the blog title, category, short excerpt, and a “Read More” button.
+
+Ensure each button inside blog cards (like "Read More", "Share", etc.) works correctly and smoothly, with hover effects and animations aligned to the selected theme (dark or light).
+
+Add a Web Stories section below the blog grid:
+
+Use a horizontally scrollable carousel of short stories with vertical preview cards.
+
+Cards should include animated progress indicators, hover effects, and a “View Story” CTA button.
+
+Ensure the overall layout and animations give a futuristic 2050-classic vibe, using the main color scheme (blue, black, white, gray), with responsive design across all screen sizes.
+
+🔐 Login & Signup Pages
+Design both pages with a 2050-inspired layout — use abstract shapes, layered glowing UI elements, and animated illustrations.
+
+Add a full-height split screen:
+
+Left: Styled background with a themed image or animated 3D/illustration.
+
+Right: Form area with soft shadows, floating input labels, and animated button transitions.
+
+Include light/dark theme compatibility.
+
+Ensure responsiveness across devices and clear input validation feedback for every form field.
+
+ℹ️ About Us Page
+Style this page with a modern storytelling layout:
+
+Include a bold headline, short animated intro text, and sectioned team/history/mission content.
+
+Use smooth scroll animations, profile cards with hover effects, and timeline components for milestones.
+
+Add subtle interactive animations like parallax image sections and floating icons.
+
+Maintain theme consistency and responsiveness across all devices.
+
+📞 Contact Us Page
+Design a sleek, futuristic contact page with:
+
+Contact form styled with floating labels, glowing border focus, and animated “Send Message” button.
+
+Contact info section (email, phone, location) with icons and hover animations.
+
+Embedded interactive map styled to match the theme.
+
+Add real-time form validation and success messages with smooth transitions.
+
+Fully responsive with optimized layout for both mobile and desktop screens.
+
+📝 Blog Page (Browse All Blogs)
+Create a clean, modern layout with filters at the top:
+
+Filters for categories, tags, date, and search bar with autocomplete.
+
+Ensure all filters and the search input work correctly, and reset or reload the content when updated.
+
+Each filter or page change should scroll the page to the top automatically.
+
+Blog cards should include:
+
+Title, date, author, category, excerpt, and a “Read More” button.
+
+Smooth hover animations and responsive card layout.
+
+Fully responsive design:
+
+Mobile: Single-column, scrollable.
+
+Tablet: Two-column grid.
+
+Desktop: Three-column grid with consistent spacing.
+
+📖 Blog Reading Page
+Focus on reader experience:
+
+Use a classic font (e.g., Inter, Georgia, or Space Grotesk) with excellent line height and readability.
+
+Include a floating Table of Contents (ToC) sidebar on desktop; collapsible on mobile.
+
+Add “Back to Top” and “Share” buttons that float or fade in on scroll.
+
+Theme-aware color styling:
+
+Dark Mode: Black background, white/blue text, smooth transitions, and subtle highlights.
+
+Light Mode: White/light gray background, black text, subtle blue highlights, and drop shadows.
+
+Make sure it’s fully optimized for all devices, with touch-friendly buttons, proper spacing, and scroll-syncing for the ToC.

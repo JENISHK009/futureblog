@@ -1,0 +1,89 @@
+📖 Blog Reading Page – “Blog Detail / Single Post”
+This is where the magic happens — where users deeply engage with your content. The Blog Reading page should offer a distraction-free, immersive, and elegant reading experience. Combine smooth typography, subtle animations, and intelligent layout to create a premium reading space — like reading in a futuristic e-reader.
+
+🔷 Layout & Content Flow
+🎬 Hero Section
+Full-width animated featured image at top with soft zoom animation on page load.
+
+Overlay includes blog title, author image + name, date, and read time.
+
+Hero background subtly darkens on scroll for focus on text.
+
+🧭 Sticky Table of Contents (TOC)
+Positioned on the left or collapsible floating panel.
+
+Animated scrollspy — highlights the active section.
+
+Sections fade in with staggered animation as user scrolls.
+
+TOC items animate into view with soft slide + opacity transition.
+
+📚 Main Content Area
+Typography is king:
+
+Font: Satoshi, Inter, or IBM Plex Serif (modern + highly readable).
+
+Headings: Bold, spaced, futuristic with blue accent underlines.
+
+Body text: High contrast with adequate spacing and line height.
+
+Paragraph Animations:
+
+Fade-in or slide-up on scroll.
+
+Blockquote: Animated vertical blue line with sliding text entrance.
+
+Code blocks: Styled with theme-aware syntax highlighting and subtle neon blue borders.
+
+🖼️ Media & Rich Content
+Images: Animated zoom-on-scroll and fade-in.
+
+Videos (if any): Auto-responsive with modern player skin (dark/light matched).
+
+Caption text should float with slight delay for elegant storytelling.
+
+🔁 Share, Like, and Comment
+Sticky “Like” and “Share” buttons on the right edge with bounce and tooltip.
+
+Comments section loads only on scroll with staggered animation for each comment.
+
+Comment form:
+
+Dark transparent background with a glowing input outline.
+
+Button: Black with neon blue pulse effect.
+
+📌 Footer / End of Blog
+Suggest 2–3 related blogs with floating animation on entry.
+
+“Back to Top” sticky pill button — animated arrow with hover effect.
+
+Theme toggle if not in global header.
+
+🧩 Suggested Folder Structure in Next.js
+less
+Copy
+Edit
+pages/
+├── blogs/
+│   └── index.tsx        // Blogs listing page
+│   └── [slug].tsx       // Blog reading detail page
+
+components/
+├── SearchBar.tsx
+├── BlogCard.tsx
+├── FiltersSidebar.tsx
+├── BlogHero.tsx
+├── TOCSticky.tsx
+├── BlogContent.tsx
+├── ShareButtons.tsx
+├── RelatedBlogs.tsx
+├── CommentSection.tsx
+⚙️ Design Summary
+Element	Light Theme	Dark Theme
+Background	#ffffff	#0a0a0a
+Font Color	#222 / #555	#f0f0f0
+Primary Accent	#007BFF (consistent)	#007BFF
+Secondary	#CCCCCC / #2A2A2A	#999999 / #333
+Button Hover Effect	Blue ripple glow	Neon edge hover effect
+Font Recommendation	Inter / Satoshi / Plex Serif	Use variable fonts with clamp()

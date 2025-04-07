@@ -1,0 +1,123 @@
+🔷 Bloggers Ground — Detailed UI/UX Prompt with Next.js Structure
+The Bloggers Ground website should be a modern, clean, and responsive platform built with Next.js, designed for users to explore and engage with high-quality blogs across various categories. The design must support both dark and light themes, seamlessly toggled by the user, with blue (#007BFF or similar) consistently used as the primary accent color across both modes to maintain brand identity. The secondary palette should include deep black shades (#121212 or #1a1a1a) for dark theme and white/off-white (#f5f5f5) for the light theme backgrounds. Transitions between light and dark modes should be smoothly animated for a refined feel.
+
+1. Homepage
+The homepage should have an animated hero section/header that includes a featured blog slider with auto and manual scroll, a slogan/tagline for the brand (like "Fuel Your Curiosity, One Blog at a Time"), and a search bar with subtle input animations. Navigation should be sticky and animated with hover transitions. Below, sections should include trending blogs, categories preview, and a scrolling web stories strip. Use Framer Motion or GSAP for entrance animations and hover effects on blog cards.
+
+Next.js Structure:
+
+pgsql
+Copy
+Edit
+pages/
+├── index.tsx (Home)
+components/
+├── Header.tsx
+├── FeaturedSlider.tsx
+├── BlogCard.tsx
+├── CategoryPreview.tsx
+├── WebStoryStrip.tsx
+2. Blogs Page
+This page lists all blogs with filters like Category, Latest, Most Popular, and a search bar. Blogs should load with a fade-in and scale animation as you scroll. On hover, cards should animate with a slight elevation and shadow glow using the primary blue. Clicking a blog takes you to the blog detail page with a smooth transition animation.
+
+Next.js Structure:
+
+pgsql
+Copy
+Edit
+pages/
+├── blogs/
+│   └── index.tsx
+components/
+├── BlogList.tsx
+├── FilterBar.tsx
+├── SearchBar.tsx
+3. Blog Detail Page
+Each blog opens in a new page with a large animated header image, blog title, author info with animation, and reading time. Integrate a table of contents (TOC) on scroll with sticky positioning. The text should have readability-focused line height and font size, with image zoom-in animations and code block theming for dev-related content. Allow users to like, comment, and share with animation feedback.
+
+Next.js Structure:
+
+css
+Copy
+Edit
+pages/
+├── blogs/
+│   └── [slug].tsx
+components/
+├── BlogContent.tsx
+├── TOC.tsx
+├── CommentSection.tsx
+├── ShareButtons.tsx
+4. Web Stories Page
+Inspired by Instagram stories or Google Web Stories, this should be a dedicated, animated carousel of short-form content. Each story opens in full-screen modal with auto-swipe and tap navigation. Animated progress bars on top of each story and swipe gestures (mobile-first design) are essential.
+
+Next.js Structure:
+
+pgsql
+Copy
+Edit
+pages/
+├── webstories/
+│   └── index.tsx
+components/
+├── StoryCarousel.tsx
+├── StoryCard.tsx
+5. About Us Page
+This page should use parallax scrolling animations and reveal-on-scroll elements to showcase your brand journey, mission, and the team. Include animated avatars of team members, a timeline of milestones, and call-to-actions (CTAs) to contribute or follow.
+
+Next.js Structure:
+
+Copy
+Edit
+pages/
+├── about.tsx
+components/
+├── AboutHero.tsx
+├── Mission.tsx
+├── Timeline.tsx
+├── TeamSection.tsx
+6. Contact Us Page
+Use a form with floating labels, blue-accented focus outlines, and animated error/success messages. Add Google Maps integration with animated pins and a hover effect. The contact form should submit with a loading spinner and a smooth feedback message.
+
+Next.js Structure:
+
+Copy
+Edit
+pages/
+├── contact.tsx
+components/
+├── ContactForm.tsx
+├── MapEmbed.tsx
+7. Authentication (Login/Signup)
+Both login and signup should use a card layout with glassmorphism effect. Animate the toggle between login and signup forms. Input fields should have animated focus states. Optionally support OAuth (Google login) with animated button loaders.
+
+Next.js Structure:
+
+pgsql
+Copy
+Edit
+pages/
+├── login.tsx
+├── signup.tsx
+components/
+├── AuthForm.tsx
+├── OAuthButtons.tsx
+8. Header & Navigation
+Create an animated header/navbar that supports sticky behavior, theme toggle (sun/moon icons), animated underline on hover for links, and a hamburger menu for mobile with slide-in side navigation. Use Next.js dynamic routes for links.
+
+Next.js Structure:
+
+Copy
+Edit
+components/
+├── Navbar.tsx
+├── ThemeToggle.tsx
+├── MobileMenu.tsx
+General Design & Animation Notes:
+Use Framer Motion or GSAP for smooth animations.
+
+For theme toggling, use context + localStorage to persist theme choice.
+
+Transitions should be 300-500ms, with ease-in-out curves.
+
+Typography should be modern, minimal, and accessible, using fonts like Inter, Poppins, or Rubik.

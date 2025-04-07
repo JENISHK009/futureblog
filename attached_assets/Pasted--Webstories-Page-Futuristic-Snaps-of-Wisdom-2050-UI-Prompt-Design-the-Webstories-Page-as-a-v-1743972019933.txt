@@ -1,0 +1,101 @@
+⚡️ Webstories Page – “Futuristic Snaps of Wisdom” (2050 UI Prompt)
+Design the Webstories Page as a visual playground that’s both aesthetic and fast. It must feel like a fluid carousel of ideas with rich animations, edge-to-edge storytelling, and responsive behavior across devices. Think Instagram stories, but make it next-gen and branded in your style.
+
+🎯 Core Features
+🖼️ Story Cards Grid (Home View)
+Display story previews in a masonry or square grid (3–4 columns on desktop, 2 on tablet, 1 full-width slider on mobile).
+
+Each card should:
+
+Have a hover animation: slight tilt + glowing blue border.
+
+Use blue overlays with white text for contrast.
+
+Show story title + category + date in overlay on hover/focus.
+
+Animate in with a zoom/fade combo as you scroll.
+
+🧠 Feature Highlight: Use WebGL or Framer Motion to animate cards based on cursor movement — the whole grid subtly shifts based on mouse angle for depth illusion.
+
+✨ Click-to-View Story (Full Page / Modal View)
+When a user clicks a story card, open the story as a full-screen immersive modal or page, with swipe/tap/click navigation between pages of the story.
+
+Features:
+Edge-to-edge layout: full height, full width story canvas.
+
+Progress bar at the top (animated blue) that shows user progress through story pages.
+
+Swipable left/right on desktop with arrow keys or buttons.
+
+Tap/swipe on mobile with smooth haptic-style feedback using animation spring effects.
+
+Each Story Page Supports:
+Image or Video background with a dark or light overlay.
+
+Floating caption/title block with animated text reveal (slide/fade).
+
+Optional CTA button (“Read Full Blog”, “Explore Topic”, etc.) styled with glowing blue glassmorphic style.
+
+🌓 Theme Design & Color Usage
+Element	Light Theme	Dark Theme
+Background	#f9fafe / #ffffff	#111418 / #1a1a1a
+Card Backgrounds	#ffffff + soft shadows	#1f1f1f + neon edge blue borders
+Text Color	#1e1e1e / #333	#f2f2f2 / #cccccc
+Primary Accent (Blue)	#007BFF / #2196f3 (gradient optional)	#007BFF / #00bfff (slightly brighter)
+Shadow/Hover Glow	Blue neon outer glow	Blue with purple-ish subtle blur
+Buttons	Transparent with bold borders or blue	Filled blue or black with neon text
+All transitions between dark/light theme should be soft animated with 0.4s duration — especially for story pages.
+
+📱 Responsive Design Behavior
+Mobile View:
+
+Grid converts into a horizontal slider of cards (swipeable).
+
+Stories open in fullscreen vertical swiper view.
+
+Action buttons become floating pills at the bottom.
+
+Tablet:
+
+Grid becomes 2-column masonry with fluid drag-to-scroll experience.
+
+Modals still open full screen, but TOC/next/prev buttons float on sides.
+
+Desktop:
+
+Full interactive grid, hover animations enabled.
+
+Story modal with keyboard nav, next/prev arrow controls, and visible CTAs.
+
+🧩 Suggested Component + Folder Structure (Next.js)
+less
+Copy
+Edit
+pages/
+├── webstories/
+│   └── index.tsx            // Webstories main listing page
+│   └── [slug].tsx           // Story detail view / reader
+
+components/
+├── StoryCard.tsx            // Grid story card
+├── StoryModal.tsx           // Fullscreen reader modal
+├── ProgressBar.tsx          // Animated story progress indicator
+├── StorySlide.tsx           // Each slide/page of story
+├── CTAButton.tsx            // Floating blue call-to-action
+🧠 Bonus Features to Consider
+Add a "Featured Webstory" carousel at top with animated headline slider.
+
+Use auto-play for stories (like Instagram), with manual pause/play toggle.
+
+Add “Webstory of the Week” with trophy-style animation and spotlight.
+
+Optionally track story view count, show progress of users (gamify!).
+
+🎨 Font Suggestion
+Use a sleek, futuristic, but readable font:
+
+Headings: Orbitron, Space Grotesk, or Exo 2
+
+Body: Inter, Satoshi, or Poppins
+
+Use font weight variations and tracking for storytelling tone.
